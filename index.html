@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 448 512%22%3E%3Cpath fill=%22%23373737%22 d=%22M224 64c-44.2 0-80 35.8-80 80v48H384c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80V144C80 64.5 144.5 0 224 0c57.5 0 107 33.7 130.1 82.3c7.6 16 .8 35.1-15.2 42.6s-35.1 .8-42.6-15.2C283.4 82.6 255.9 64 224 64zm32 320c17.7 0 32-14.3 32-32s-14.3-32-32-32H192c-17.7 0-32 14.3-32 32s14.3 32 32 32h64z%22/%3E%3C/svg%3E">
+
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="primary-container">
+        <h2>Password generator</h2>
+
+        <div>
+            <div class="input-container">
+
+                <input class="input-field" type="text" id="password" readonly>
+
+                <div class="button-container">
+
+                    <button type="button" id="regenerate"><i class="fas fa-sync-alt icon"></i></button>
+
+                    <button type="button" id="copy"><i class="fas fa-copy icon"></i></button>
+
+                </div>
+
+
+
+            </div>
+            <div class="length">
+                <p>Length: <span id="length-display">10</span></p>
+                <input class="input-length" type="range" id="length" min="8" max="30" value="10">
+
+            </div>
+        </div>
+
+        <div class="advanced-options-container">
+            <h3>Advanced options</h3>
+
+            <div class="options-subcontainer">
+
+                <div class="option-container">
+                    <div class="input">
+                        <input type="checkbox" id="lowercase" checked>
+                        <p>Lowercase a-z</p>
+                    </div>
+
+
+                    <p>Include unicode characters from position 97 to 122.</p>
+
+                </div>
+
+             
+                    <div class="option-container">
+                        <div class="input">
+                            <input type="checkbox" id="uppercase" checked>
+                            <p>Uppercase A-Z</p>
+                            
+                        </div>
+                        <p>Include unicode characters from position 65 to 90.</p>
+                    </div>
+              
+
+           
+                    <div class="option-container">
+                        <div class="input">
+                            <input type="checkbox" id="numbers" checked>
+                            <p>Numbers 0-9</p>
+                            
+                        </div>
+                        <p>Include unicode characters from position 48 to 57.</p>
+                    </div>
+            
+
+       
+                    <div class="option-container">
+                        <div class="input">
+                            <input type="checkbox" id="symbols" checked>
+                            <p>Special @#$%^&*</p>
+                        </div>
+                        <p>Include unicode characters from position 33 to 38, 42, 64, and 94.</p>
+                    </div>
+            
+            </div>
+
+        </div>
+        <p class="madeBy">Made with <i class="fa-solid fa-heart"></i> by <a href="https://github.com/Ssamuelfernandez">Ssamuelfernandez</a></p>
+    </div>
+    <script src="https://kit.fontawesome.com/dd375db2b3.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
